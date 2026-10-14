@@ -1,0 +1,7 @@
+# Transformer fine-tuning. Install AFTER requirements.txt.
+# Locally, install torch with the CUDA command from https://pytorch.org/get-started/locally/
+# On Kaggle/Colab torch is preinstalled - skip it.
+transformers>=4.41
+accelerate>=0.30
+evaluate>=0.4
+sentencepiece

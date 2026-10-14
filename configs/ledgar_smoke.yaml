@@ -1,0 +1,15 @@
+seed: 42
+model_name: nlpaueb/legal-bert-small-uncased
+max_length: 128
+epochs: 1
+batch_size: 16
+eval_batch_size: 32
+grad_accum: 1
+learning_rate: 5.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.06
+fp16: false
+gradient_checkpointing: false
+max_train_samples: 500
+max_eval_samples: 200
+output_dir: outputs/ledgar_smoke

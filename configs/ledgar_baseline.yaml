@@ -1,0 +1,22 @@
+seed: 42
+dataset:
+  name: coastalcph/lex_glue
+  config: ledgar
+tfidf:
+  ngram_range: [1, 2]
+  min_df: 2
+  max_features: 200000
+  sublinear_tf: true
+  lowercase: true
+models:
+  linear_svc:
+    C: 1.0
+    class_weight: null
+  linear_svc_balanced:
+    C: 1.0
+    class_weight: balanced
+  logreg:
+    C: 10.0
+    max_iter: 300
+    class_weight: null
+output_dir: outputs/ledgar_baseline
