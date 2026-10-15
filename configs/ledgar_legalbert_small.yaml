@@ -1,7 +1,7 @@
 seed: 42
 model_name: nlpaueb/legal-bert-small-uncased
 max_length: 256
-epochs: 15
+epochs: 10
 batch_size: 16
 eval_batch_size: 64
 grad_accum: 2
@@ -12,4 +12,5 @@ fp16: true
 gradient_checkpointing: false
 max_train_samples: null
 max_eval_samples: null
+label_smoothing: 0.1
 output_dir: outputs/ledgar_legalbert_small

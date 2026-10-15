@@ -87,6 +87,7 @@ def main(config_path: str) -> None:
         gradient_checkpointing=bool(cfg["gradient_checkpointing"]),
         seed=seed,
         report_to="none",
+        label_smoothing_factor=float(cfg.get("label_smoothing", 0.0)),
         dataloader_num_workers=0,
     )
 
